@@ -26,7 +26,7 @@ namespace StackUsingLinkedList_CSarp
             if (top == null)
                 return (true);
             else
-                return;
+                return (false);
         }
         public void push(int element)
         {
