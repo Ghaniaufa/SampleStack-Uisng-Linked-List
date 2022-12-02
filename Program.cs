@@ -81,6 +81,10 @@ namespace StackUsingLinkedList_CSarp
                             break;
                         }
                         s.pop();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
                 }
             }
         }
