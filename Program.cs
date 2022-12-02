@@ -28,5 +28,10 @@ namespace StackUsingLinkedList_CSarp
             else
                 return
         }
+        public void push(int element)
+        {
+            Node fresh;
+            fresh = new Node(element, null);
+        }
     }
 }
