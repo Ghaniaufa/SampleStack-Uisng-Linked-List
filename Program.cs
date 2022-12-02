@@ -33,5 +33,25 @@ namespace StackUsingLinkedList_CSarp
             Node fresh;
             fresh = new Node(element, null);
         }
+        public void pop()
+        {
+            Console.WriteLine("\nThe popped element is: " + top.info);
+            top = top.next; //Make top point to the next node in sequence
+        }
+        public void display()
+        {
+            Node tmp;
+            if (empty()) //If stack is empty
+                Console.WriteLine("\nStack Empty")
+            else
+            {
+                //Traverse the list from beggining till end
+                for(tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.info);
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
